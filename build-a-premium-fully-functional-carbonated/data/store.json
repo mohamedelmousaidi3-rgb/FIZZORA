@@ -1,0 +1,398 @@
+{
+  "settings": {
+    "brand": "FIZZORA",
+    "currency": "USD",
+    "contactEmail": "hello@fizzora.demo",
+    "phone": "+1 555 014 2030",
+    "address": "Your configured business address",
+    "deliveryFee": 5,
+    "codEnabled": true
+  },
+  "users": [
+    {
+      "id": "admin",
+      "email": "admin@fizzora.local",
+      "name": "Store Administrator",
+      "passwordHash": "37e85e892e08e643c8e828dccf364150:a30c8f69514f93933c795d5445532cafa77f849373fec340ad3fe5d52908a545",
+      "role": "admin"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cola",
+      "name": "Cola",
+      "description": "Classic, rich, and impossibly refreshing.",
+      "image": "/assets/fizzora-1.jpg",
+      "active": true,
+      "order": 0
+    },
+    {
+      "id": "orange",
+      "name": "Orange Drinks",
+      "description": "Bright citrus for a burst of sunshine.",
+      "image": "/assets/fizzora-3.jpg",
+      "active": true,
+      "order": 1
+    },
+    {
+      "id": "citrus",
+      "name": "Lemon and Citrus",
+      "description": "Crisp sparkling citrus blends.",
+      "image": "/assets/fizzora-2.jpg",
+      "active": true,
+      "order": 2
+    },
+    {
+      "id": "energy",
+      "name": "Energy Drinks",
+      "description": "A charged, sparkling lift.",
+      "image": "/assets/fizzora-1.jpg",
+      "active": true,
+      "order": 3
+    },
+    {
+      "id": "zero",
+      "name": "Zero Sugar",
+      "description": "All the character, zero sugar.",
+      "image": "/assets/fizzora-3.jpg",
+      "active": true,
+      "order": 4
+    },
+    {
+      "id": "other",
+      "name": "Other Soft Drinks",
+      "description": "Unexpected sparkling favorites.",
+      "image": "/assets/fizzora-2.jpg",
+      "active": true,
+      "order": 5
+    }
+  ],
+  "products": [
+    {
+      "id": "midnight-cola",
+      "slug": "midnight-cola",
+      "name": "Midnight Cola",
+      "categoryId": "cola",
+      "flavor": "Classic cola",
+      "size": "330ml can",
+      "price": 2.5,
+      "salePrice": null,
+      "stock": 46,
+      "featured": true,
+      "bestSeller": true,
+      "published": true,
+      "description": "A sparkling demo beverage with a clean finish and vivid flavor. Replace this editable sample content in the admin studio.",
+      "ingredients": "Carbonated water, natural flavors, citric acid, sweetener.",
+      "nutrition": {
+        "calories": 110,
+        "sugar": 27,
+        "carbohydrates": 28
+      },
+      "images": [
+        "/assets/fizzora-1.jpg"
+      ],
+      "createdAt": "2026-10-27T23:02:18.722Z",
+      "updatedAt": "2026-10-27T23:02:18.739Z"
+    },
+    {
+      "id": "sunset-orange",
+      "slug": "sunset-orange",
+      "name": "Sunset Orange",
+      "categoryId": "orange",
+      "flavor": "Valencia orange",
+      "size": "330ml can",
+      "price": 2.8,
+      "salePrice": 2.3,
+      "stock": 32,
+      "featured": true,
+      "bestSeller": false,
+      "published": true,
+      "description": "A sparkling demo beverage with a clean finish and vivid flavor. Replace this editable sample content in the admin studio.",
+      "ingredients": "Carbonated water, natural flavors, citric acid, sweetener.",
+      "nutrition": {
+        "calories": 110,
+        "sugar": 27,
+        "carbohydrates": 28
+      },
+      "images": [
+        "/assets/fizzora-3.jpg"
+      ],
+      "createdAt": "2026-10-26T23:02:18.739Z",
+      "updatedAt": "2026-10-27T23:02:18.739Z"
+    },
+    {
+      "id": "lime-surge",
+      "slug": "lime-surge",
+      "name": "Lime Surge",
+      "categoryId": "citrus",
+      "flavor": "Lime and lemon",
+      "size": "330ml can",
+      "price": 2.7,
+      "salePrice": null,
+      "stock": 25,
+      "featured": true,
+      "bestSeller": true,
+      "published": true,
+      "description": "A sparkling demo beverage with a clean finish and vivid flavor. Replace this editable sample content in the admin studio.",
+      "ingredients": "Carbonated water, natural flavors, citric acid, sweetener.",
+      "nutrition": {
+        "calories": 110,
+        "sugar": 27,
+        "carbohydrates": 28
+      },
+      "images": [
+        "/assets/fizzora-2.jpg"
+      ],
+      "createdAt": "2026-10-25T23:02:18.739Z",
+      "updatedAt": "2026-10-27T23:02:18.739Z"
+    },
+    {
+      "id": "volt-berry",
+      "slug": "volt-berry",
+      "name": "Volt Berry",
+      "categoryId": "energy",
+      "flavor": "Electric berry",
+      "size": "250ml can",
+      "price": 3.9,
+      "salePrice": null,
+      "stock": 19,
+      "featured": false,
+      "bestSeller": true,
+      "published": true,
+      "description": "A sparkling demo beverage with a clean finish and vivid flavor. Replace this editable sample content in the admin studio.",
+      "ingredients": "Carbonated water, natural flavors, citric acid, sweetener.",
+      "nutrition": {
+        "calories": 110,
+        "sugar": 27,
+        "carbohydrates": 28
+      },
+      "images": [
+        "/assets/fizzora-1.jpg"
+      ],
+      "createdAt": "2026-10-24T23:02:18.74Z",
+      "updatedAt": "2026-10-27T23:02:18.74Z"
+    },
+    {
+      "id": "pure-cola-zero",
+      "slug": "pure-cola-zero",
+      "name": "Pure Cola Zero",
+      "categoryId": "zero",
+      "flavor": "Classic cola",
+      "size": "330ml can",
+      "price": 2.6,
+      "salePrice": null,
+      "stock": 65,
+      "featured": true,
+      "bestSeller": false,
+      "published": true,
+      "description": "A sparkling demo beverage with a clean finish and vivid flavor. Replace this editable sample content in the admin studio.",
+      "ingredients": "Carbonated water, natural flavors, citric acid, sweetener.",
+      "nutrition": {
+        "calories": 0,
+        "sugar": 0,
+        "carbohydrates": 0
+      },
+      "images": [
+        "/assets/fizzora-3.jpg"
+      ],
+      "createdAt": "2026-10-23T23:02:18.74Z",
+      "updatedAt": "2026-10-27T23:02:18.74Z"
+    },
+    {
+      "id": "grapefruit-pop",
+      "slug": "grapefruit-pop",
+      "name": "Grapefruit Pop",
+      "categoryId": "other",
+      "flavor": "Pink grapefruit",
+      "size": "330ml can",
+      "price": 3.1,
+      "salePrice": null,
+      "stock": 12,
+      "featured": false,
+      "bestSeller": false,
+      "published": true,
+      "description": "A sparkling demo beverage with a clean finish and vivid flavor. Replace this editable sample content in the admin studio.",
+      "ingredients": "Carbonated water, natural flavors, citric acid, sweetener.",
+      "nutrition": {
+        "calories": 110,
+        "sugar": 27,
+        "carbohydrates": 28
+      },
+      "images": [
+        "/assets/fizzora-2.jpg"
+      ],
+      "createdAt": "2026-10-22T23:02:18.74Z",
+      "updatedAt": "2026-10-27T23:02:18.74Z"
+    },
+    {
+      "id": "citrus-drift",
+      "slug": "citrus-drift",
+      "name": "Citrus Drift",
+      "categoryId": "citrus",
+      "flavor": "Yuzu lemon",
+      "size": "500ml bottle",
+      "price": 3.4,
+      "salePrice": null,
+      "stock": 0,
+      "featured": true,
+      "bestSeller": false,
+      "published": true,
+      "description": "A sparkling demo beverage with a clean finish and vivid flavor. Replace this editable sample content in the admin studio.",
+      "ingredients": "Carbonated water, natural flavors, citric acid, sweetener.",
+      "nutrition": {
+        "calories": 110,
+        "sugar": 27,
+        "carbohydrates": 28
+      },
+      "images": [
+        "/assets/fizzora-2.jpg"
+      ],
+      "createdAt": "2026-10-21T23:02:18.74Z",
+      "updatedAt": "2026-10-27T23:02:18.74Z"
+    },
+    {
+      "id": "orange-zero",
+      "slug": "orange-zero",
+      "name": "Orange Zero",
+      "categoryId": "zero",
+      "flavor": "Bright orange",
+      "size": "330ml can",
+      "price": 2.8,
+      "salePrice": null,
+      "stock": 22,
+      "featured": false,
+      "bestSeller": false,
+      "published": true,
+      "description": "A sparkling demo beverage with a clean finish and vivid flavor. Replace this editable sample content in the admin studio.",
+      "ingredients": "Carbonated water, natural flavors, citric acid, sweetener.",
+      "nutrition": {
+        "calories": 110,
+        "sugar": 27,
+        "carbohydrates": 28
+      },
+      "images": [
+        "/assets/fizzora-3.jpg"
+      ],
+      "createdAt": "2026-10-20T23:02:18.74Z",
+      "updatedAt": "2026-10-27T23:02:18.74Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "75401a2e-4f94-4044-939d-113cef20b08b",
+      "reference": "FZ-43160384",
+      "customer": {
+        "name": "‪Mohamed ELMOUSAIDI‬‏",
+        "email": "mohamedelmousaidi3@gmail.com",
+        "phone": "0655328952",
+        "address": "California\nCalifornian",
+        "city": "California"
+      },
+      "items": [
+        {
+          "productId": "midnight-cola",
+          "name": "Midnight Cola",
+          "quantity": 1,
+          "unitPrice": 2.5,
+          "image": "/assets/fizzora-1.jpg"
+        },
+        {
+          "productId": "volt-berry",
+          "name": "Volt Berry",
+          "quantity": 1,
+          "unitPrice": 3.9,
+          "image": "/assets/fizzora-1.jpg"
+        }
+      ],
+      "subtotal": 6.4,
+      "discount": 0,
+      "deliveryFee": 5,
+      "total": 11.4,
+      "payment": "cod",
+      "paymentStatus": "unpaid",
+      "status": "confirmed",
+      "idempotencyKey": "5ef41c14-0bc0-465b-80d3-9259d10d09ad",
+      "history": [
+        {
+          "status": "pending",
+          "at": "2026-10-27T23:19:20.385Z"
+        },
+        {
+          "status": "confirmed",
+          "at": "2026-10-28T01:00:51.705Z"
+        },
+        {
+          "status": "cancelled",
+          "at": "2026-10-28T01:00:57.160Z"
+        },
+        {
+          "status": "confirmed",
+          "at": "2026-10-28T01:01:16.986Z"
+        }
+      ],
+      "createdAt": "2026-10-27T23:19:20.385Z"
+    },
+    {
+      "id": "a43e297b-e46f-401e-b813-2f8d99221299",
+      "reference": "FZ-46938378",
+      "customer": {
+        "name": "Mohamed ELMOUSAIDI",
+        "email": "admin@newstep.ma",
+        "phone": "0612345679",
+        "address": "SHBSC",
+        "city": "XSXNSM"
+      },
+      "items": [
+        {
+          "productId": "midnight-cola",
+          "name": "Midnight Cola",
+          "quantity": 1,
+          "unitPrice": 2.5,
+          "image": "/assets/fizzora-1.jpg"
+        }
+      ],
+      "subtotal": 2.5,
+      "discount": 0.25,
+      "deliveryFee": 5,
+      "total": 7.25,
+      "payment": "cod",
+      "paymentStatus": "unpaid",
+      "status": "cancelled",
+      "idempotencyKey": "ef8f0b14-25c8-414d-bad8-fbe577f346b4",
+      "history": [
+        {
+          "status": "pending",
+          "at": "2026-10-28T00:22:18.378Z"
+        },
+        {
+          "status": "confirmed",
+          "at": "2026-10-28T01:00:48.584Z"
+        },
+        {
+          "status": "cancelled",
+          "at": "2026-10-28T01:00:59.938Z"
+        }
+      ],
+      "createdAt": "2026-10-28T00:22:18.378Z"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "795a45d0-f6d9-4fee-bc70-530a6b6fa96e",
+      "name": "Mohamed ELMOUSAIDI",
+      "email": "mohamedelmousaidi3@gmail.com",
+      "subject": "whdwhd",
+      "message": "suxwudggudgwgqwixjxh qwvxuwqvch xqwxvqwc c  wqcxvwqc wqc hc sgc \n",
+      "createdAt": "2026-10-28T01:28:43.362Z"
+    }
+  ],
+  "newsletters": [],
+  "promotions": [
+    {
+      "code": "FIZZ10",
+      "type": "percent",
+      "value": 10,
+      "active": true
+    }
+  ]
+}
