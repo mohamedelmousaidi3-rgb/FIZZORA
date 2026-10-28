@@ -1,4 +1,4 @@
-﻿const http=require('http'),fs=require('fs'),path=require('path'),crypto=require('crypto'),querystring=require('querystring');
+﻿const http=require('http'),fs=require('fs'),path=require('path'),crypto=require('crypto'),querystring=require('querystring'); 
 const ROOT=__dirname; if(fs.existsSync(path.join(ROOT,'.env')))fs.readFileSync(path.join(ROOT,'.env'),'utf8').split(/\r?\n/).forEach(line=>{let i=line.indexOf('=');if(i>0&&!line.startsWith('#'))process.env[line.slice(0,i).trim()]??=line.slice(i+1).trim()});
 const DATA=path.join(ROOT,'data','store.json'),PORT=process.env.PORT||3000,SECRET=process.env.SESSION_SECRET||'local-dev-change-this',sessions=new Map(),loginAttempts=new Map();
 const now=()=>new Date().toISOString(),id=()=>crypto.randomUUID(),hash=p=>{let s=crypto.randomBytes(16).toString('hex');return s+':'+crypto.pbkdf2Sync(p,s,120000,32,'sha256').toString('hex')},verify=(p,h)=>{let [s,x]=String(h||'').split(':');if(!s||!/^[a-f0-9]{64}$/i.test(x||''))return false;let stored=Buffer.from(x,'hex'),candidate=crypto.pbkdf2Sync(String(p||''),s,120000,32,'sha256');return stored.length===candidate.length&&crypto.timingSafeEqual(stored,candidate)};
